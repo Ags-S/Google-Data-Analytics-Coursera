@@ -196,5 +196,40 @@ SedentaryMinutes, Calories, ActivityType) %>%<br>
   <br>
   <p> Bellabeat has a lot of potential to become a world class player in the smart device market. Their core values are a guarantee of a success. <br>
     based on the analysis of Fitbit users activity and performing a bit of reserch in current trends there are recomendations to help Belabeat reach their full potential </p>
-  <H3> RECOMMENDATIONS </h3>
-
+  <H4> RECOMMENDATIONS </h4>
+  <br>
+<ul>
+  <li> Utilize social media - People love to take part in challanges and it makes them more accountabe </li>
+  <li> Encourage users to stay active by sending notifications when they reach a milestones towards a bigger goal i.e 10 thosand steps a day</li>
+  <li> Consider including advertisements of a helth and fitness products of other companies </li>
+  <li> Consider a section in the app with tips about mindfulness, health and staying fit </li>
+  <li> Enable notifications when user has been inactive for longer period of time </li>
+  <li> Let people connect with each other to build bigger sense of community support system if worse day occur </li>
+  <li> Build trust and reasure customers that their data is completly safe </li>
+  <li> Focus on a Mindfulness features - over 3 million people uses meditation apps, it would be a smart move to include some basic meditation and relaxation techniques </li>
+  <li> Make sure the use of the app and inputing relevant information is as simple and fast as it can be. Customers rely mostly on automated tracking and simplicity</li>
+  <li> Focus on inclusivity </li>
+  </ul>
+  <br>
+  <h4> MEMBERSHIP IMPROVEMENTS </4>
+  <br>
+  <ul>
+    <li> Offer a trial period </li>
+    <li> Add and highlight additional benefits of subscription i.e discounts for own products or trying to collaborate with other companies </li>
+  </ul>
+  <br>
+  <br>
+  <h2> RESEARCH </h2>
+  <br>
+  https://www.gearhungry.com/best-heart-rate-monitor/#:~:text=Modern%20technology%20has%20introduced%20the%20innovative%20heart%20rate,realize%20the%20importance%20of%20living%20a%20healthy%20lifestyle.
+<br>
+  https://www.healthworkscollective.com/top-5-advantages-of-a-heart-rate-monitor-for-workouts-and-daily-life/#:~:text=Top%205%20Advantages%20Of%20A%20Heart%20Rate%20Monitor,Some%20Heart%20Rate%20Monitors%20Offer%20Additional%20Features%20
+  <br>
+  http://www.bestbmicalculator.com/25/
+  <br>
+ https://www.idealhome.co.uk/news/smart-technology-home-concerns-198472
+  <br>
+  https://www.techgenyz.com/2018/12/12/how-smart-technology-impacting-environment/
+  <br>
+  https://www.forbes.com/sites/bernardmarr/2022/01/26/the-5-biggest-fitness-and-wellness-technology-trends-in-2022/?sh=2f64c09c7cad
+  
