@@ -168,18 +168,25 @@ SedentaryMinutes, Calories, ActivityType) %>%<br>
     <li> Creating plots </li>
   </ul>
   <br>
-  > plot1 <- ggplot(daily_activity, aes(x=TotalSteps, y= Calories)) + <br>
+  > plot1 <- ggplot(daily_activity_sleep, aes(x=SedentaryMinutes, y= TotalMinutesAsleep)) + <br>
 +   geom_point(color="purple") + geom_smooth(color="black") + <br>
-+   labs(title="Total Steps and Calories Burned relationship") <br>
++   labs(title="Sedentary minutes in relation to sleeping time") <br>
 <br><img src = "https://github.com/Ags-S/Google-Data-Analytics-Coursera/blob/main/r-graphics1.png">
-         <br>
+  <br>
 > plot2 <- ggplot(daily_activity, aes(x=TotalSteps, y= Calories)) + <br>
 +   geom_smooth(color="black") + <br>
 +   labs(title="Total Steps and Calories Burned relationship") <br>
-<br><img src = "https://github.com/Ags-S/Google-Data-Analytics-Coursera/blob/main/r-graphics2.png?raw=true"> <br>
+   <ul>
+    <li> Posiitive correlation between distanvce and calories burnt </li>
+  </ul>
+<br><img src = "https://github.com/Ags-S/Google-Data-Analytics-Coursera/blob/main/r-graphics2.png"> <br>
 > plot3 <- ggplot(daily_sleep, aes(x=TotalMinutesAsleep, y=TotalTimeInBed)) + <br>
 +  geom_point(color="pink") + geom_smooth(color="black") + <br>
 +  labs(title="Time Asleep(min)and total time in bed relationship") <br><br>
   <img src = "https://github.com/Ags-S/Google-Data-Analytics-Coursera/blob/main/r-graphics3.png">
+  <br>
+  <ul>
+    <li> This proves the observation made earlier </li>
+  </ul>
 
 
