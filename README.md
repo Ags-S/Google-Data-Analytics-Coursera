@@ -137,6 +137,10 @@ SedentaryMinutes, Calories, ActivityType) %>%<br>
  3rd Qu.:1.000      |  3rd Qu.:490.0     |   3rd Qu.:526.0
  Max.   :3.000      |  Max.   :796.0     |   Max.   :961.0
 <br>
+  <ul>
+    <li> On average users get 7:21 hours of sleep which is in recommended amount</li>
+    <li> The total amount spent in bed on average is around 7:50 which indicates that the users don't tend to struggle with insomnia </li>
+  </ul>
 <br>
 > weight_log %>%<br>
 + select(WeightKg, BMI) %>%<br>
@@ -150,5 +154,11 @@ SedentaryMinutes, Calories, ActivityType) %>%<br>
  Mean   : 72.04 |  Mean   :25.19|
  3rd Qu.: 85.05 |  3rd Qu.:25.56|
  Max.   :133.50 |  Max.   :47.54|
+    <br>
+    <ul>
+      <li>The average BMI for the users is 25.19 which means that on average users are obese. That said most professionals start to slowly drop BMI as a good indicator of health</li>
+      <li> The average weight is 72.04 kg. Unfortunatelly this doesn't give us much insight as we missing key characteristincs such as gender, age and lifestyle </li>
+  </ul>
+    <li>
 
 
