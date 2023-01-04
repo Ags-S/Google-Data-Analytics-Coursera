@@ -1,4 +1,4 @@
-<h1 align = "center"> Bellabeat case study </h1>
+****<h1 align = "center"> Bellabeat case study </h1>****
 <img src = "https://media-exp1.licdn.com/dms/image/C4D0BAQEJ_LS2gJfJWA/company-logo_200_200/0/1604095919872?e=2159024400&v=beta&t=snwBfT14oFk-sOKedz7ykzhZ_ijoV8ddhOlFIaMYZBs" align = "right">
 <h4 align = "left"> Agnieszka Karolina Szewczyk <br>
 4/01/2022 </h4><br><br><br><br>
@@ -212,7 +212,7 @@ SedentaryMinutes, Calories, ActivityType) %>%<br>
   </ul>
   <br>
   <h4> MEMBERSHIP IMPROVEMENTS </4>
-  <br>
+  <br> <br.
   <ul>
     <li> Offer a trial period </li>
     <li> Add and highlight additional benefits of subscription i.e discounts for own products or trying to collaborate with other companies </li>
