@@ -48,4 +48,53 @@ I also think that it lacks important data about the users participating such as 
 I had a look at the heartrate_seconds.csv file and although monitoring heart rate has plenty of benefits  in day to day life as well as during activities , I won't be getting deeper into analysing this data set due to low number of users (only 7). It is worth noting that the popularity of such devices growing and more people are being aware that the monitoring of heart rate could be vital for ensuring  good health. This could be a good feature to include in Bellabeat devices. </p> <br>
 <p>After performing basic cleaning and checking of data in Excel, I will now move to R.</p>
 <h4>The whole code written in R can be found in a file called "RMARKDOWN" </h4>
+<ul>
+  <li>Importing the files I will be focussing on and renaming for simplification:</li>
+<br>
+> setwd("/Users/agnie/Documents/project") <br>
+> daily_activity <- read_csv("dailyActivity.csv") <br>
+> daily_sleep <- read_csv("sleepDay.csv") <br>
+> weight_log <- read_csv("weightLog.csv") <br><br>
+  <li> Preview ech file to make sure it's been imported correctly</li>
+  <br>
+  > glimpse(daily_activity)<br>
+Rows: 940<br>
+Columns: 15<br>
+$ Id <dbl> 1503960366, 1503960366, 1503960366, 150396036…<br>
+$ ActivityDate <chr> "4/12/2016", "4/13/2016", "4/14/2016", "4/15/…<br>
+$ TotalSteps <dbl> 13162, 10735, 10460, 9762, 12669, 9705, 13019…<br>
+$ TotalDistance <dbl> 8.50, 6.97, 6.74, 6.28, 8.16, 6.48, 8.59, 9.8…<br>
+$ TrackerDistance <dbl> 8.50, 6.97, 6.74, 6.28, 8.16, 6.48, 8.59, 9.8…<br>
+$ LoggedActivitiesDistance <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …<br>
+$ VeryActiveDistance <dbl> 1.88, 1.57, 2.44, 2.14, 2.71, 3.19, 3.25, 3.5…<br>
+$ ModeratelyActiveDistance <dbl> 0.55, 0.69, 0.40, 1.26, 0.41, 0.78, 0.64, 1.3…<br>
+$ LightActiveDistance <dbl> 6.06, 4.71, 3.91, 2.83, 5.04, 2.51, 4.71, 5.0…<br>
+$ SedentaryActiveDistance <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …<br>
+$ VeryActiveMinutes <dbl> 25, 21, 30, 29, 36, 38, 42, 50, 28, 19, 66, 4…<br>
+$ FairlyActiveMinutes <dbl> 13, 19, 11, 34, 10, 20, 16, 31, 12, 8, 27, 21…<br>
+$ LightlyActiveMinutes <dbl> 328, 217, 181, 209, 221, 164, 233, 264, 205, …<br>
+$ SedentaryMinutes <dbl> 728, 776, 1218, 726, 773, 539, 1149, 775, 818…<br>
+$ Calories <dbl> 1985, 1797, 1776, 1745, 1863, 1728, 1921, 203…<br>
+<br>
+> glimpse(daily_sleep)<br>
+Rows: 413<br>
+Columns: 5<br>
+$ Id <dbl> 1503960366, 1503960366, 1503960366, 1503960366, 150…<br>
+$ SleepDay <chr> "4/12/2016", "4/13/2016", "4/15/2016", "4/16/2016",…<br>
+$ TotalSleepRecords <dbl> 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …<br>
+$ TotalMinutesAsleep <dbl> 327, 384, 412, 340, 700, 304, 360, 325, 361, 430, 2…<br>
+$ TotalTimeInBed <dbl> 346, 407, 442, 367, 712, 320, 377, 364, 384, 449, 3…<br>
+<br>
+> glimpse(weight_log)<br>
+Rows: 67<br>
+Columns: 8<br>
+$ Id <dbl> 1503960366, 1503960366, 1927972279, 2873212765, 2873212…<br>
+$ Date <chr> "5/2/2016", "5/3/2016", "4/13/2016", "4/21/2016", "5/12…<br>
+$ WeightKg <dbl> 52.6, 52.6, 133.5, 56.7, 57.3, 72.4, 72.3, 69.7, 70.3, …<br>
+$ WeightPounds <dbl> 115.9631, 115.9631, 294.3171, 125.0021, 126.3249, 159.6…<br>
+$ Fat <dbl> 22, NA, NA, NA, NA, 25, NA, NA, NA, NA, NA, NA, NA, NA,…<br>
+$ BMI <dbl> 22.65, 22.65, 47.54, 21.45, 21.69, 27.45, 27.38, 27.25,…<br>
+$ IsManualReport <lgl> TRUE, TRUE, FALSE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, …<br>
+$ LogId <dbl> 1.462234e+12, 1.462320e+12, 1.460510e+12, 1.461283e+12,…
+
 
