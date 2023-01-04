@@ -102,6 +102,7 @@ $ LogId <dbl> 1.462234e+12, 1.462320e+12, 1.460510e+12, 1.461283e+12,… <br>
   <h2> Analyse </h2> <br>
  <ul>
    <li> Pulling key statistics</li><br>
+  </ul>
    > daily_activity %>%<br>
 + select(TotalSteps, TotalDistance, VeryActiveMinutes, FairlyActiveMinutes, LightlyActiveMinutes,<br>
 SedentaryMinutes, Calories, ActivityType) %>%<br>
@@ -116,6 +117,12 @@ SedentaryMinutes, Calories, ActivityType) %>%<br>
 | 3rd Qu.:10727 |  3rd Qu.: 7.713 |  3rd Qu.: 32.00    | 3rd Qu.: 19.00      |  3rd Qu.:264.0        |  3rd Qu.:1229.5   |    3rd Qu.:2793     |         
 | Max.   :36019 |  Max.   :28.030 |  Max.   :210.00    | Max.   :143.00      |  Max.   :518.0        |  Max.   :1440.0   |    Max.   :4900     |   
 <br>
+  <ul>
+    <li> On average users burn 2304 thousand calories daily </li>
+    <li> The mean of totals steps per day is 7638 steps which is a good amount of step, but under the 10 thousend steps recomended by CDC </li>
+    <li> On average the total distance walked a day is 5.49 </li>
+    <li> On average the users spend 16:51 hours being senentary per day, which is really high and can cause a lot of health problems! </li>
+  </ul>
 <br>
 > daily_sleep %>%<br>
 + select(TotalSleepRecords, TotalMinutesAsleep, TotalTimeInBed) %>%<br>
