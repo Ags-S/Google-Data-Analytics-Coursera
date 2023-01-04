@@ -164,6 +164,8 @@ SedentaryMinutes, Calories, ActivityType) %>%<br>
   <p> After looking closely to the data tracked, I feel like there is not enough information and there are a lot of key characteristic missing to gain good overview of the trends and user habits </p>
   <br>
   <br>
+  <h2> SHARE </h2>
+  <br>
   <ul>
     <li> Creating plots </li>
   </ul>
@@ -188,5 +190,8 @@ SedentaryMinutes, Calories, ActivityType) %>%<br>
   <ul>
     <li> This proves the observation made earlier </li>
   </ul>
-
+<br>
+  <h2> ACT</h2>
+  <br>
+  
 
