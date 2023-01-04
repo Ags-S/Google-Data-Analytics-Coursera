@@ -159,6 +159,5 @@ SedentaryMinutes, Calories, ActivityType) %>%<br>
       <li>The average BMI for the users is 25.19 which means that on average users are obese. That said most professionals start to slowly drop BMI as a good indicator of health</li>
       <li> The average weight is 72.04 kg. Unfortunatelly this doesn't give us much insight as we missing key characteristincs such as gender, age and lifestyle </li>
   </ul>
-    <li>
 
 
