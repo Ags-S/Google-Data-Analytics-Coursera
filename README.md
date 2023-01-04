@@ -194,5 +194,7 @@ SedentaryMinutes, Calories, ActivityType) %>%<br>
 <br>
   <h2> ACT</h2>
   <br>
-  
+  <p> Bellabeat has a lot of potential to become a world class player in the smart device market. Their core values are a guarantee of a success. <br>
+    based on the analysis of Fitbit users activity and performing a bit of reserch in current trends there are recomendations to help Belabeat reach their full potential </p>
+  <H3> RECOMMENDATIONS </h3>
 
