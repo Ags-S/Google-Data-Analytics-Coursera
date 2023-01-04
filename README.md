@@ -44,6 +44,7 @@ I also think that it lacks important data about the users participating such as 
   <li>The next steps were to obtain count of unique customer values by using  COUNT(UNIQUE())  formulas  and gathering the information on what data is stored in each file by using TEXTJOIN function.</li>
   <li>The information obtained by performing the 2 last steps was transferred to separate spreadsheet.</li>
   </ul><br>
+  <img src = "https://github.com/Ags-S/Google-Data-Analytics-Coursera/blob/main/excel.png"> <br>
 <p>Upon closer look I have identified that the file dailyActivity_merged.csv contains the data from  dailyCalories_merged.csv, dailyIntensities_merged.csv, and dailySteps_merged.csv therefore I won't be using those.<br><br>
 I had a look at the heartrate_seconds.csv file and although monitoring heart rate has plenty of benefits  in day to day life as well as during activities , I won't be getting deeper into analysing this data set due to low number of users (only 7). It is worth noting that the popularity of such devices growing and more people are being aware that the monitoring of heart rate could be vital for ensuring  good health. This could be a good feature to include in Bellabeat devices. </p> <br>
 <p>After performing basic cleaning and checking of data in Excel, I will now move to R.</p>
