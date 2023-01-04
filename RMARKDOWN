@@ -1,4 +1,4 @@
- ## Installing and loading  needed libraries
+> ## Installing and loading  needed libraries
 > install.packages("tidyverse")
 Installing package into ‘C:/Users/agnie/AppData/Local/R/win-library/4.2’
 (as ‘lib’ is unspecified)
@@ -10,7 +10,7 @@ downloaded 418 KB
 package ‘tidyverse’ successfully unpacked and MD5 sums checked
 
 The downloaded binary packages are in
-        C:\Users\agnie\AppData\Local\Temp\Rtmp2NF8P9\downloaded_packages
+        C:\Users\agnie\AppData\Local\Temp\RtmpI5anmg\downloaded_packages
 > install.packages("here")
 Installing package into ‘C:/Users/agnie/AppData/Local/R/win-library/4.2’
 (as ‘lib’ is unspecified)
@@ -21,7 +21,7 @@ downloaded 62 KB
 package ‘here’ successfully unpacked and MD5 sums checked
 
 The downloaded binary packages are in
-        C:\Users\agnie\AppData\Local\Temp\Rtmp2NF8P9\downloaded_packages
+        C:\Users\agnie\AppData\Local\Temp\RtmpI5anmg\downloaded_packages
 > install.packages("skimr")
 Installing package into ‘C:/Users/agnie/AppData/Local/R/win-library/4.2’
 (as ‘lib’ is unspecified)
@@ -32,7 +32,7 @@ downloaded 1.2 MB
 package ‘skimr’ successfully unpacked and MD5 sums checked
 
 The downloaded binary packages are in
-        C:\Users\agnie\AppData\Local\Temp\Rtmp2NF8P9\downloaded_packages
+        C:\Users\agnie\AppData\Local\Temp\RtmpI5anmg\downloaded_packages
 > install.packages("lubridate")
 Installing package into ‘C:/Users/agnie/AppData/Local/R/win-library/4.2’
 (as ‘lib’ is unspecified)
@@ -43,7 +43,7 @@ downloaded 920 KB
 package ‘lubridate’ successfully unpacked and MD5 sums checked
 
 The downloaded binary packages are in
-        C:\Users\agnie\AppData\Local\Temp\Rtmp2NF8P9\downloaded_packages
+        C:\Users\agnie\AppData\Local\Temp\RtmpI5anmg\downloaded_packages
 > install.packages("janitor")
 Installing package into ‘C:/Users/agnie/AppData/Local/R/win-library/4.2’
 (as ‘lib’ is unspecified)
@@ -54,7 +54,7 @@ downloaded 247 KB
 package ‘janitor’ successfully unpacked and MD5 sums checked
 
 The downloaded binary packages are in
-        C:\Users\agnie\AppData\Local\Temp\Rtmp2NF8P9\downloaded_packages
+        C:\Users\agnie\AppData\Local\Temp\RtmpI5anmg\downloaded_packages
 > install.packages("dplyr")
 Installing package into ‘C:/Users/agnie/AppData/Local/R/win-library/4.2’
 (as ‘lib’ is unspecified)
@@ -65,7 +65,7 @@ downloaded 1.2 MB
 package ‘dplyr’ successfully unpacked and MD5 sums checked
 
 The downloaded binary packages are in
-        C:\Users\agnie\AppData\Local\Temp\Rtmp2NF8P9\downloaded_packages
+        C:\Users\agnie\AppData\Local\Temp\RtmpI5anmg\downloaded_packages
 > library(tidyverse)
 ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
 ✔ ggplot2 3.4.0      ✔ purrr   1.0.0 
@@ -104,7 +104,7 @@ The following objects are masked from ‘package:stats’:
 > 
 > daily_activity <- read_csv("dailyActivity.csv")
 
-[1mindexing[0m [34mdailyActivity.csv[0m [================================] [32m1.16GB/s[0m, eta: [36m 0s[0m
+[1mindexing[0m [34mdailyActivity.csv[0m [================================] [32m1.08GB/s[0m, eta: [36m 0s[0m
                                                                                                                    
 Rows: 940 Columns: 15
 ── Column specification ────────────────────────────────────────────────────────
@@ -130,7 +130,7 @@ dbl (4): Id, TotalSleepRecords, TotalMinutesAsleep, TotalTimeInBed
 > 
 > weight_log <- read_csv("weightLog.csv")
 
-[1mindexing[0m [34mweightLog.csv[0m [==================================] [32m203.55MB/s[0m, eta: [36m 0s[0m
+[1mindexing[0m [34mweightLog.csv[0m [==================================] [32m194.93MB/s[0m, eta: [36m 0s[0m
                                                                                                                    
 Rows: 67 Columns: 8
 ── Column specification ────────────────────────────────────────────────────────
@@ -248,7 +248,7 @@ $ TotalTimeInBed           <dbl> 346, 407, NA, 442, 367, 712, NA, 320, 377, 36�
 > ##Creating data visualisations
 > plot1 <- ggplot(daily_activity_sleep, aes(x=SedentaryMinutes, y= TotalMinutesAsleep)) +
 +   geom_point(color="purple") + geom_smooth(color="black") +
-+   labs(title="Total Steps and Calories Burned relationship")
++   labs(title="Sedentary minutes in relation to sleeping time")
 > 
 > plot2 <- ggplot(daily_activity, aes(x=TotalSteps, y= Calories)) +
 +   geom_smooth(color="black") +
@@ -270,4 +270,7 @@ Warning messages:
 > png("r-graphics3.png")
 > print(plot3)
 `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
-> dev.off
+> dev.off()
+png 
+  2 
+> 
