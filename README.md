@@ -1,6 +1,7 @@
 <h1 align = "center"> Bellabeat case study </h1>
+<img src = "https://media-exp1.licdn.com/dms/image/C4D0BAQEJ_LS2gJfJWA/company-logo_200_200/0/1604095919872?e=2159024400&v=beta&t=snwBfT14oFk-sOKedz7ykzhZ_ijoV8ddhOlFIaMYZBs" align = "right">
 <h4 align = "left"> Agnieszka Karolina Szewczyk <br>
-4/01/2022 </h4>
+4/01/2022 </h4><br><br><br><br>
 
 <h2> INTRODUCTION </h2>
 <p> This project was the capstone of the Google Data Analytics Certificate. I have decided to use Excel and R to complete this task. This was my first project using R.</p>
@@ -18,7 +19,7 @@ Bellabeat marketing analytics team: A team of data analysts responsible for coll
 <ul>
   <li> What are some trends in smart device usage and how these trends apply to Bellabeat customers? </li>
 <li> How could these trends help influence Bellabeat marketing strategy and help gain new customers? </li>
-  </ul>
+  </ul><br>
 
 <h2> PREPARE </h2>
 <ul>
@@ -33,7 +34,7 @@ I also think that it lacks important data about the users participating such as 
 <li> Originality : LOW – third party data collected using Amazon Mechanical Turk.</li>
   <li> Comprehensive : MEDIUM – Multiple data frames with different information </li>
 <li> Current : MEDIUM – data is 7 years old. People tend to have their own habits which are not likely to change very fast, but it might not be the best reflection on current trends. </li>
-  <li> Cited : HIGH – data collector and source is properly documented.</li> </ul>
+  <li> Cited : HIGH – data collector and source is properly documented.</li> </ul><br>
 <h2> PROCESS </h2>
 <h3> Data selection & Cleaning</h3> <br>
 <p>I have downloaded and opened each file in Excel.</p>
@@ -44,6 +45,7 @@ I also think that it lacks important data about the users participating such as 
   <li>The information obtained by performing the 2 last steps was transferred to separate spreadsheet.</li>
   </ul><br>
 <p>Upon closer look I have identified that the file dailyActivity_merged.csv contains the data from  dailyCalories_merged.csv, dailyIntensities_merged.csv, and dailySteps_merged.csv therefore I won't be using those.<br><br>
-I had a look at the heartrate_seconds.csv file and although monitoring heart rate has plenty of benefits  in day to day life as well as during activities , I won't be getting deeper into analysing this data set due to low number of users (only 7). It is worth noting that the popularity of such devices growing and more people are being aware that the monitoring of heart rate could be vital for ensuring  good health. This could be a good feature to include in Bellabeat devices. </p>
-
+I had a look at the heartrate_seconds.csv file and although monitoring heart rate has plenty of benefits  in day to day life as well as during activities , I won't be getting deeper into analysing this data set due to low number of users (only 7). It is worth noting that the popularity of such devices growing and more people are being aware that the monitoring of heart rate could be vital for ensuring  good health. This could be a good feature to include in Bellabeat devices. </p> <br>
+<p>After performing basic cleaning and checking of data in Excel, I will now move to R.</p>
+<h4>The whole code written in R can be found in a file called "RMARKDOWN" </h4>
 
