@@ -95,6 +95,54 @@ $ WeightPounds <dbl> 115.9631, 115.9631, 294.3171, 125.0021, 126.3249, 159.6…<
 $ Fat <dbl> 22, NA, NA, NA, NA, 25, NA, NA, NA, NA, NA, NA, NA, NA,…<br>
 $ BMI <dbl> 22.65, 22.65, 47.54, 21.45, 21.69, 27.45, 27.38, 27.25,…<br>
 $ IsManualReport <lgl> TRUE, TRUE, FALSE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, …<br>
-$ LogId <dbl> 1.462234e+12, 1.462320e+12, 1.460510e+12, 1.461283e+12,…
+$ LogId <dbl> 1.462234e+12, 1.462320e+12, 1.460510e+12, 1.461283e+12,… <br>
+  <br>
+  <li>The count of rows and columns looks correct, so I will move to pulling some key statistics to gain more insight </li>
+  </ul>
+  <h2> Analyse </h2> <br>
+ <ul>
+   <li> Pulling key statistics</li><br>
+   > daily_activity %>%<br>
++ select(TotalSteps, TotalDistance, VeryActiveMinutes, FairlyActiveMinutes, LightlyActiveMinutes,<br>
+SedentaryMinutes, Calories, ActivityType) %>%<br>
++ summary()<br>
+TotalSteps TotalDistance VeryActiveMinutes FairlyActiveMinutes<br>
+Min. : 0 Min. : 0.000 Min. : 0.00 Min. : 0.00<br>
+1st Qu.: 3790 1st Qu.: 2.620 1st Qu.: 0.00 1st Qu.: 0.00<br>
+Median : 7406 Median : 5.245 Median : 4.00 Median : 6.00<br>
+Mean : 7638 Mean : 5.490 Mean : 21.16 Mean : 13.56<br>
+3rd Qu.:10727 3rd Qu.: 7.713 3rd Qu.: 32.00 3rd Qu.: 19.00<br>
+Max. :36019 Max. :28.030 Max. :210.00 Max. :143.00<br>
+LightlyActiveMinutes SedentaryMinutes Calories ActivityType<br>
+Min. : 0.0 Min. : 0.0 Min. : 0 Length:940<br>
+1st Qu.:127.0 1st Qu.: 729.8 1st Qu.:1828 Class :character<br>
+Median :199.0 Median :1057.5 Median :2134 Mode :character<br>
+Mean :192.8 Mean : 991.2 Mean :2304<br>
+3rd Qu.:264.0 3rd Qu.:1229.5 3rd Qu.:2793<br>
+Max. :518.0 Max. :1440.0 Max. :4900<br>
+<br>
+<br>
+> daily_sleep %>%<br>
++ select(TotalSleepRecords, TotalMinutesAsleep, TotalTimeInBed) %>%<br>
++ summary()<br>
+TotalSleepRecords TotalMinutesAsleep TotalTimeInBed<br>
+Min. :1.000 Min. : 58.0 Min. : 61.0<br>
+1st Qu.:1.000 1st Qu.:361.0 1st Qu.:403.0<br>
+Median :1.000 Median :433.0 Median :463.0<br>
+Mean :1.119 Mean :419.5 Mean :458.6<br>
+3rd Qu.:1.000 3rd Qu.:490.0 3rd Qu.:526.0<br>
+Max. :3.000 Max. :796.0 Max. :961.0<br>
+<br>
+<br>
+> weight_log %>%<br>
++ select(WeightKg, BMI) %>%<br>
++ summary()<br>
+WeightKg BMI<br>
+Min. : 52.60 Min. :21.45<br>
+1st Qu.: 61.40 1st Qu.:23.96<br>
+Median : 62.50 Median :24.39<br>
+Mean : 72.04 Mean :25.19<br>
+3rd Qu.: 85.05 3rd Qu.:25.56<br>
+Max. :133.50 Max. :47.54<br>
 
 
