@@ -171,7 +171,8 @@ SedentaryMinutes, Calories, ActivityType) %>%<br>
   > plot1 <- ggplot(daily_activity, aes(x=TotalSteps, y= Calories)) + <br>
 +   geom_point(color="purple") + geom_smooth(color="black") + <br>
 +   labs(title="Total Steps and Calories Burned relationship") <br>
-<br><br>
+<br><img src = "https://github.com/Ags-S/Google-Data-Analytics-Coursera/blob/main/r-graphics1.png">
+         <br>
 > plot2 <- ggplot(daily_activity, aes(x=TotalSteps, y= Calories)) + <br>
 +   geom_smooth(color="black") + <br>
 +   labs(title="Total Steps and Calories Burned relationship") <br>
