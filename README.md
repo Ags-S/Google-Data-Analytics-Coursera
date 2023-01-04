@@ -154,10 +154,9 @@ SedentaryMinutes, Calories, ActivityType) %>%<br>
  Mean   : 72.04 |  Mean   :25.19|
  3rd Qu.: 85.05 |  3rd Qu.:25.56|
  Max.   :133.50 |  Max.   :47.54|
-  
-    <br>
+  <br>
     <ul>
-      <li>The average BMI for the users is 25.19 which means that on average users are obese. That said most professionals start to slowly drop BMI as a good indicator of health</li>
+      <li> The average BMI for the users is 25.19 which means that on average users are obese. That said most professionals start to slowly drop BMI as a good indicator of health </li>
       <li> The average weight is 72.04 kg. Unfortunatelly this doesn't give us much insight as we missing key characteristincs such as gender, age and lifestyle </li>
   </ul>
 <br>
@@ -168,4 +167,17 @@ SedentaryMinutes, Calories, ActivityType) %>%<br>
   <ul>
     <li> Creating plots </li>
   </ul>
+  <br>
+  > plot1 <- ggplot(daily_activity, aes(x=TotalSteps, y= Calories)) + <br>
++   geom_point(color="purple") + geom_smooth(color="black") + <br>
++   labs(title="Total Steps and Calories Burned relationship") <br>
+<br><br>
+> plot2 <- ggplot(daily_activity, aes(x=TotalSteps, y= Calories)) + <br>
++   geom_smooth(color="black") + <br>
++   labs(title="Total Steps and Calories Burned relationship") <br>
+<br> <br>
+> plot3 <- ggplot(daily_sleep, aes(x=TotalMinutesAsleep, y=TotalTimeInBed)) + <br>
++  geom_point(color="pink") + geom_smooth(color="black") + <br>
++  labs(title="Time Asleep(min)and total time in bed relationship") <br><br>
+
 
