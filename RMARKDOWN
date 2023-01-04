@@ -1,4 +1,4 @@
-> ## Installing and loading  needed libraries
+ ## Installing and loading  needed libraries
 > install.packages("tidyverse")
 Installing package into ‘C:/Users/agnie/AppData/Local/R/win-library/4.2’
 (as ‘lib’ is unspecified)
@@ -10,7 +10,7 @@ downloaded 418 KB
 package ‘tidyverse’ successfully unpacked and MD5 sums checked
 
 The downloaded binary packages are in
-        C:\Users\agnie\AppData\Local\Temp\RtmpSKmHTI\downloaded_packages
+        C:\Users\agnie\AppData\Local\Temp\Rtmp2NF8P9\downloaded_packages
 > install.packages("here")
 Installing package into ‘C:/Users/agnie/AppData/Local/R/win-library/4.2’
 (as ‘lib’ is unspecified)
@@ -21,7 +21,7 @@ downloaded 62 KB
 package ‘here’ successfully unpacked and MD5 sums checked
 
 The downloaded binary packages are in
-        C:\Users\agnie\AppData\Local\Temp\RtmpSKmHTI\downloaded_packages
+        C:\Users\agnie\AppData\Local\Temp\Rtmp2NF8P9\downloaded_packages
 > install.packages("skimr")
 Installing package into ‘C:/Users/agnie/AppData/Local/R/win-library/4.2’
 (as ‘lib’ is unspecified)
@@ -32,7 +32,7 @@ downloaded 1.2 MB
 package ‘skimr’ successfully unpacked and MD5 sums checked
 
 The downloaded binary packages are in
-        C:\Users\agnie\AppData\Local\Temp\RtmpSKmHTI\downloaded_packages
+        C:\Users\agnie\AppData\Local\Temp\Rtmp2NF8P9\downloaded_packages
 > install.packages("lubridate")
 Installing package into ‘C:/Users/agnie/AppData/Local/R/win-library/4.2’
 (as ‘lib’ is unspecified)
@@ -43,7 +43,7 @@ downloaded 920 KB
 package ‘lubridate’ successfully unpacked and MD5 sums checked
 
 The downloaded binary packages are in
-        C:\Users\agnie\AppData\Local\Temp\RtmpSKmHTI\downloaded_packages
+        C:\Users\agnie\AppData\Local\Temp\Rtmp2NF8P9\downloaded_packages
 > install.packages("janitor")
 Installing package into ‘C:/Users/agnie/AppData/Local/R/win-library/4.2’
 (as ‘lib’ is unspecified)
@@ -54,7 +54,7 @@ downloaded 247 KB
 package ‘janitor’ successfully unpacked and MD5 sums checked
 
 The downloaded binary packages are in
-        C:\Users\agnie\AppData\Local\Temp\RtmpSKmHTI\downloaded_packages
+        C:\Users\agnie\AppData\Local\Temp\Rtmp2NF8P9\downloaded_packages
 > install.packages("dplyr")
 Installing package into ‘C:/Users/agnie/AppData/Local/R/win-library/4.2’
 (as ‘lib’ is unspecified)
@@ -65,14 +65,14 @@ downloaded 1.2 MB
 package ‘dplyr’ successfully unpacked and MD5 sums checked
 
 The downloaded binary packages are in
-        C:\Users\agnie\AppData\Local\Temp\RtmpSKmHTI\downloaded_packages
+        C:\Users\agnie\AppData\Local\Temp\Rtmp2NF8P9\downloaded_packages
 > library(tidyverse)
-── Attaching packages ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.3.2 ──
+── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
 ✔ ggplot2 3.4.0      ✔ purrr   1.0.0 
 ✔ tibble  3.1.8      ✔ dplyr   1.0.10
 ✔ tidyr   1.2.1      ✔ stringr 1.5.0 
 ✔ readr   2.1.3      ✔ forcats 0.5.2 
-── Conflicts ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
 > library(lubridate)
@@ -104,23 +104,23 @@ The following objects are masked from ‘package:stats’:
 > 
 > daily_activity <- read_csv("dailyActivity.csv")
 
-[1mindexing[0m [34mdailyActivity.csv[0m [======================================================================================================================] [32m79.79MB/s[0m, eta: [36m 0s[0m
-                                                                                                                                                                                                          
+[1mindexing[0m [34mdailyActivity.csv[0m [================================] [32m1.16GB/s[0m, eta: [36m 0s[0m
+                                                                                                                   
 Rows: 940 Columns: 15
-── Column specification ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+── Column specification ────────────────────────────────────────────────────────
 Delimiter: ","
 chr  (1): ActivityDate
-dbl (14): Id, TotalSteps, TotalDistance, TrackerDistance, LoggedActivitiesDistance, VeryActiveDistance, ModeratelyActiveDistance, LightActiveDistance, SedentaryAct...
+dbl (14): Id, TotalSteps, TotalDistance, TrackerDistance, LoggedActivitiesDi...
 
 ℹ Use `spec()` to retrieve the full column specification for this data.
 ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 > 
 > daily_sleep <- read_csv("sleepDay.csv")
 
-[1mindexing[0m [34msleepDay.csv[0m [==========================================================================================================================] [32m505.78MB/s[0m, eta: [36m 0s[0m
-                                                                                                                                                                                                          
+[1mindexing[0m [34msleepDay.csv[0m [===================================] [32m424.08MB/s[0m, eta: [36m 0s[0m
+                                                                                                                   
 Rows: 413 Columns: 5
-── Column specification ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+── Column specification ────────────────────────────────────────────────────────
 Delimiter: ","
 chr (1): SleepDay
 dbl (4): Id, TotalSleepRecords, TotalMinutesAsleep, TotalTimeInBed
@@ -130,10 +130,10 @@ dbl (4): Id, TotalSleepRecords, TotalMinutesAsleep, TotalTimeInBed
 > 
 > weight_log <- read_csv("weightLog.csv")
 
-[1mindexing[0m [34mweightLog.csv[0m [=========================================================================================================================] [32m203.55MB/s[0m, eta: [36m 0s[0m
-                                                                                                                                                                                                          
+[1mindexing[0m [34mweightLog.csv[0m [==================================] [32m203.55MB/s[0m, eta: [36m 0s[0m
+                                                                                                                   
 Rows: 67 Columns: 8
-── Column specification ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+── Column specification ────────────────────────────────────────────────────────
 Delimiter: ","
 chr (1): Date
 dbl (6): Id, WeightKg, WeightPounds, Fat, BMI, LogId
@@ -147,53 +147,60 @@ lgl (1): IsManualReport
 > glimpse(daily_activity)
 Rows: 940
 Columns: 15
-$ Id                       <dbl> 1503960366, 1503960366, 1503960366, 1503960366, 1503960366, 1503960366, 1503960366, 1503960366, 1503960366, 1503960366, 1503960366, …
-$ ActivityDate             <chr> "4/12/2016", "4/13/2016", "4/14/2016", "4/15/2016", "4/16/2016", "4/17/2016", "4/18/2016", "4/19/2016", "4/20/2016", "4/21/2016", "4…
-$ TotalSteps               <dbl> 13162, 10735, 10460, 9762, 12669, 9705, 13019, 15506, 10544, 9819, 12764, 14371, 10039, 15355, 13755, 18134, 13154, 11181, 14673, 10…
-$ TotalDistance            <dbl> 8.50, 6.97, 6.74, 6.28, 8.16, 6.48, 8.59, 9.88, 6.68, 6.34, 8.13, 9.04, 6.41, 9.80, 8.79, 12.21, 8.53, 7.15, 9.25, 6.81, 9.71, 9.66,…
-$ TrackerDistance          <dbl> 8.50, 6.97, 6.74, 6.28, 8.16, 6.48, 8.59, 9.88, 6.68, 6.34, 8.13, 9.04, 6.41, 9.80, 8.79, 12.21, 8.53, 7.15, 9.25, 6.81, 9.71, 9.66,…
-$ LoggedActivitiesDistance <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
-$ VeryActiveDistance       <dbl> 1.88, 1.57, 2.44, 2.14, 2.71, 3.19, 3.25, 3.53, 1.96, 1.34, 4.76, 2.81, 2.92, 5.29, 2.33, 6.40, 3.54, 1.06, 3.56, 2.29, 3.21, 3.73, …
-$ ModeratelyActiveDistance <dbl> 0.55, 0.69, 0.40, 1.26, 0.41, 0.78, 0.64, 1.32, 0.48, 0.35, 1.12, 0.87, 0.21, 0.57, 0.92, 0.41, 1.16, 0.50, 1.42, 1.60, 0.57, 1.05, …
-$ LightActiveDistance      <dbl> 6.06, 4.71, 3.91, 2.83, 5.04, 2.51, 4.71, 5.03, 4.24, 4.65, 2.24, 5.36, 3.28, 3.94, 5.54, 5.41, 3.79, 5.58, 4.27, 2.92, 5.92, 4.88, …
-$ SedentaryActiveDistance  <dbl> 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, …
-$ VeryActiveMinutes        <dbl> 25, 21, 30, 29, 36, 38, 42, 50, 28, 19, 66, 41, 39, 73, 31, 78, 48, 16, 52, 33, 41, 50, 36, 45, 24, 37, 44, 46, 46, 36, 0, 0, 0, 0, …
-$ FairlyActiveMinutes      <dbl> 13, 19, 11, 34, 10, 20, 16, 31, 12, 8, 27, 21, 5, 14, 23, 11, 28, 12, 34, 35, 15, 24, 22, 24, 6, 46, 8, 11, 31, 23, 0, 0, 0, 0, 0, 0…
-$ LightlyActiveMinutes     <dbl> 328, 217, 181, 209, 221, 164, 233, 264, 205, 211, 130, 262, 238, 216, 279, 243, 189, 243, 217, 246, 277, 254, 203, 250, 289, 175, 20…
-$ SedentaryMinutes         <dbl> 728, 776, 1218, 726, 773, 539, 1149, 775, 818, 838, 1217, 732, 709, 814, 833, 1108, 782, 815, 712, 730, 798, 816, 1179, 857, 754, 83…
-$ Calories                 <dbl> 1985, 1797, 1776, 1745, 1863, 1728, 1921, 2035, 1786, 1775, 1827, 1949, 1788, 2013, 1970, 2159, 1898, 1837, 1947, 1820, 2004, 1990, …
+$ Id                       <dbl> 1503960366, 1503960366, 1503960366, 150396036…
+$ ActivityDate             <chr> "4/12/2016", "4/13/2016", "4/14/2016", "4/15/…
+$ TotalSteps               <dbl> 13162, 10735, 10460, 9762, 12669, 9705, 13019…
+$ TotalDistance            <dbl> 8.50, 6.97, 6.74, 6.28, 8.16, 6.48, 8.59, 9.8…
+$ TrackerDistance          <dbl> 8.50, 6.97, 6.74, 6.28, 8.16, 6.48, 8.59, 9.8…
+$ LoggedActivitiesDistance <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+$ VeryActiveDistance       <dbl> 1.88, 1.57, 2.44, 2.14, 2.71, 3.19, 3.25, 3.5…
+$ ModeratelyActiveDistance <dbl> 0.55, 0.69, 0.40, 1.26, 0.41, 0.78, 0.64, 1.3…
+$ LightActiveDistance      <dbl> 6.06, 4.71, 3.91, 2.83, 5.04, 2.51, 4.71, 5.0…
+$ SedentaryActiveDistance  <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+$ VeryActiveMinutes        <dbl> 25, 21, 30, 29, 36, 38, 42, 50, 28, 19, 66, 4…
+$ FairlyActiveMinutes      <dbl> 13, 19, 11, 34, 10, 20, 16, 31, 12, 8, 27, 21…
+$ LightlyActiveMinutes     <dbl> 328, 217, 181, 209, 221, 164, 233, 264, 205, …
+$ SedentaryMinutes         <dbl> 728, 776, 1218, 726, 773, 539, 1149, 775, 818…
+$ Calories                 <dbl> 1985, 1797, 1776, 1745, 1863, 1728, 1921, 203…
 > glimpse(daily_sleep)
 Rows: 413
 Columns: 5
-$ Id                 <dbl> 1503960366, 1503960366, 1503960366, 1503960366, 1503960366, 1503960366, 1503960366, 1503960366, 1503960366, 1503960366, 1503960366, 150396…
-$ SleepDay           <chr> "4/12/2016", "4/13/2016", "4/15/2016", "4/16/2016", "4/17/2016", "4/19/2016", "4/20/2016", "4/21/2016", "4/23/2016", "4/24/2016", "4/25/20…
-$ TotalSleepRecords  <dbl> 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
-$ TotalMinutesAsleep <dbl> 327, 384, 412, 340, 700, 304, 360, 325, 361, 430, 277, 245, 366, 341, 404, 369, 277, 273, 247, 334, 331, 594, 338, 383, 285, 119, 124, 796…
-$ TotalTimeInBed     <dbl> 346, 407, 442, 367, 712, 320, 377, 364, 384, 449, 323, 274, 393, 354, 425, 396, 309, 296, 264, 367, 349, 611, 342, 403, 306, 127, 142, 961…
+$ Id                 <dbl> 1503960366, 1503960366, 1503960366, 1503960366, 150…
+$ SleepDay           <chr> "4/12/2016", "4/13/2016", "4/15/2016", "4/16/2016",…
+$ TotalSleepRecords  <dbl> 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
+$ TotalMinutesAsleep <dbl> 327, 384, 412, 340, 700, 304, 360, 325, 361, 430, 2…
+$ TotalTimeInBed     <dbl> 346, 407, 442, 367, 712, 320, 377, 364, 384, 449, 3…
 > glimpse(weight_log)
 Rows: 67
 Columns: 8
-$ Id             <dbl> 1503960366, 1503960366, 1927972279, 2873212765, 2873212765, 4319703577, 4319703577, 4558609924, 4558609924, 4558609924, 4558609924, 4558609924…
-$ Date           <chr> "5/2/2016", "5/3/2016", "4/13/2016", "4/21/2016", "5/12/2016", "4/17/2016", "5/4/2016", "4/18/2016", "4/25/2016", "5/1/2016", "5/2/2016", "5/9…
-$ WeightKg       <dbl> 52.6, 52.6, 133.5, 56.7, 57.3, 72.4, 72.3, 69.7, 70.3, 69.9, 69.2, 69.1, 90.7, 62.5, 62.1, 61.7, 61.5, 62.0, 61.4, 61.2, 61.4, 61.7, 61.4, 61.…
-$ WeightPounds   <dbl> 115.9631, 115.9631, 294.3171, 125.0021, 126.3249, 159.6147, 159.3942, 153.6622, 154.9850, 154.1031, 152.5599, 152.3394, 199.9593, 137.7889, 13…
-$ Fat            <dbl> 22, NA, NA, NA, NA, 25, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA…
-$ BMI            <dbl> 22.65, 22.65, 47.54, 21.45, 21.69, 27.45, 27.38, 27.25, 27.46, 27.32, 27.04, 27.00, 28.00, 24.39, 24.24, 24.10, 24.00, 24.21, 23.96, 23.89, 23…
-$ IsManualReport <lgl> TRUE, TRUE, FALSE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, FALSE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TR…
-$ LogId          <dbl> 1.462234e+12, 1.462320e+12, 1.460510e+12, 1.461283e+12, 1.463098e+12, 1.460938e+12, 1.462406e+12, 1.461024e+12, 1.461629e+12, 1.462147e+12, 1.…
+$ Id             <dbl> 1503960366, 1503960366, 1927972279, 2873212765, 2873212…
+$ Date           <chr> "5/2/2016", "5/3/2016", "4/13/2016", "4/21/2016", "5/12…
+$ WeightKg       <dbl> 52.6, 52.6, 133.5, 56.7, 57.3, 72.4, 72.3, 69.7, 70.3, …
+$ WeightPounds   <dbl> 115.9631, 115.9631, 294.3171, 125.0021, 126.3249, 159.6…
+$ Fat            <dbl> 22, NA, NA, NA, NA, 25, NA, NA, NA, NA, NA, NA, NA, NA,…
+$ BMI            <dbl> 22.65, 22.65, 47.54, 21.45, 21.69, 27.45, 27.38, 27.25,…
+$ IsManualReport <lgl> TRUE, TRUE, FALSE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, …
+$ LogId          <dbl> 1.462234e+12, 1.462320e+12, 1.460510e+12, 1.461283e+12,…
 > ##Create new variable 
 > daily_activity <- daily_activity  %>% mutate(ActivityType = case_when(TotalSteps < 5000 ~ "Sedentary",  TotalSteps >=5000 & TotalSteps < 7500 ~ "Low Active", TotalSteps >=7500 & TotalSteps < 10000 ~ "Moderate Active", TotalSteps >=10000 & TotalSteps < 12500 ~ "Active", TotalSteps >=12500 ~ "Highly Active"))
 > ##Pulling key statistics
 > daily_activity %>%
 + select(TotalSteps, TotalDistance, VeryActiveMinutes, FairlyActiveMinutes, LightlyActiveMinutes, SedentaryMinutes, Calories, ActivityType) %>%
 + summary()
-   TotalSteps    TotalDistance    VeryActiveMinutes FairlyActiveMinutes LightlyActiveMinutes SedentaryMinutes    Calories    ActivityType      
- Min.   :    0   Min.   : 0.000   Min.   :  0.00    Min.   :  0.00      Min.   :  0.0        Min.   :   0.0   Min.   :   0   Length:940        
- 1st Qu.: 3790   1st Qu.: 2.620   1st Qu.:  0.00    1st Qu.:  0.00      1st Qu.:127.0        1st Qu.: 729.8   1st Qu.:1828   Class :character  
- Median : 7406   Median : 5.245   Median :  4.00    Median :  6.00      Median :199.0        Median :1057.5   Median :2134   Mode  :character  
- Mean   : 7638   Mean   : 5.490   Mean   : 21.16    Mean   : 13.56      Mean   :192.8        Mean   : 991.2   Mean   :2304                     
- 3rd Qu.:10727   3rd Qu.: 7.713   3rd Qu.: 32.00    3rd Qu.: 19.00      3rd Qu.:264.0        3rd Qu.:1229.5   3rd Qu.:2793                     
- Max.   :36019   Max.   :28.030   Max.   :210.00    Max.   :143.00      Max.   :518.0        Max.   :1440.0   Max.   :4900                     
+   TotalSteps    TotalDistance    VeryActiveMinutes FairlyActiveMinutes
+ Min.   :    0   Min.   : 0.000   Min.   :  0.00    Min.   :  0.00     
+ 1st Qu.: 3790   1st Qu.: 2.620   1st Qu.:  0.00    1st Qu.:  0.00     
+ Median : 7406   Median : 5.245   Median :  4.00    Median :  6.00     
+ Mean   : 7638   Mean   : 5.490   Mean   : 21.16    Mean   : 13.56     
+ 3rd Qu.:10727   3rd Qu.: 7.713   3rd Qu.: 32.00    3rd Qu.: 19.00     
+ Max.   :36019   Max.   :28.030   Max.   :210.00    Max.   :143.00     
+ LightlyActiveMinutes SedentaryMinutes    Calories    ActivityType      
+ Min.   :  0.0        Min.   :   0.0   Min.   :   0   Length:940        
+ 1st Qu.:127.0        1st Qu.: 729.8   1st Qu.:1828   Class :character  
+ Median :199.0        Median :1057.5   Median :2134   Mode  :character  
+ Mean   :192.8        Mean   : 991.2   Mean   :2304                     
+ 3rd Qu.:264.0        3rd Qu.:1229.5   3rd Qu.:2793                     
+ Max.   :518.0        Max.   :1440.0   Max.   :4900                     
 > daily_sleep %>%
 + select(TotalSleepRecords, TotalMinutesAsleep, TotalTimeInBed) %>%
 + summary()
@@ -214,8 +221,32 @@ $ LogId          <dbl> 1.462234e+12, 1.462320e+12, 1.460510e+12, 1.461283e+12, 1
  Mean   : 72.04   Mean   :25.19  
  3rd Qu.: 85.05   3rd Qu.:25.56  
  Max.   :133.50   Max.   :47.54  
+> ##Creating new variable
+> daily_activity_sleep <- full_join(daily_activity, daily_sleep,  by= c("Id", "ActivityDate" = "SleepDay"))
+> glimpse(daily_activity_sleep)
+Rows: 943
+Columns: 19
+$ Id                       <dbl> 1503960366, 1503960366, 1503960366, 150396036…
+$ ActivityDate             <chr> "4/12/2016", "4/13/2016", "4/14/2016", "4/15/…
+$ TotalSteps               <dbl> 13162, 10735, 10460, 9762, 12669, 9705, 13019…
+$ TotalDistance            <dbl> 8.50, 6.97, 6.74, 6.28, 8.16, 6.48, 8.59, 9.8…
+$ TrackerDistance          <dbl> 8.50, 6.97, 6.74, 6.28, 8.16, 6.48, 8.59, 9.8…
+$ LoggedActivitiesDistance <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+$ VeryActiveDistance       <dbl> 1.88, 1.57, 2.44, 2.14, 2.71, 3.19, 3.25, 3.5…
+$ ModeratelyActiveDistance <dbl> 0.55, 0.69, 0.40, 1.26, 0.41, 0.78, 0.64, 1.3…
+$ LightActiveDistance      <dbl> 6.06, 4.71, 3.91, 2.83, 5.04, 2.51, 4.71, 5.0…
+$ SedentaryActiveDistance  <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+$ VeryActiveMinutes        <dbl> 25, 21, 30, 29, 36, 38, 42, 50, 28, 19, 66, 4…
+$ FairlyActiveMinutes      <dbl> 13, 19, 11, 34, 10, 20, 16, 31, 12, 8, 27, 21…
+$ LightlyActiveMinutes     <dbl> 328, 217, 181, 209, 221, 164, 233, 264, 205, …
+$ SedentaryMinutes         <dbl> 728, 776, 1218, 726, 773, 539, 1149, 775, 818…
+$ Calories                 <dbl> 1985, 1797, 1776, 1745, 1863, 1728, 1921, 203…
+$ ActivityType             <chr> "Highly Active", "Active", "Active", "Moderat…
+$ TotalSleepRecords        <dbl> 1, 2, NA, 1, 2, 1, NA, 1, 1, 1, NA, 1, 1, 1, …
+$ TotalMinutesAsleep       <dbl> 327, 384, NA, 412, 340, 700, NA, 304, 360, 32…
+$ TotalTimeInBed           <dbl> 346, 407, NA, 442, 367, 712, NA, 320, 377, 36…
 > ##Creating data visualisations
-> plot1 <- ggplot(daily_activity, aes(x=TotalSteps, y= Calories)) +
+> plot1 <- ggplot(daily_activity_sleep, aes(x=SedentaryMinutes, y= TotalMinutesAsleep)) +
 +   geom_point(color="purple") + geom_smooth(color="black") +
 +   labs(title="Total Steps and Calories Burned relationship")
 > 
@@ -230,13 +261,13 @@ $ LogId          <dbl> 1.462234e+12, 1.462320e+12, 1.460510e+12, 1.461283e+12, 1
 > png("r-graphics1.png")
 > print(plot1)
 `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
+Warning messages:
+1: Removed 530 rows containing non-finite values (`stat_smooth()`). 
+2: Removed 530 rows containing missing values (`geom_point()`). 
 > png("r-graphics2.png")
 > print(plot2)
 `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
 > png("r-graphics3.png")
 > print(plot3)
 `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
-> dev.off()
-png 
-  2 
-> 
+> dev.off
