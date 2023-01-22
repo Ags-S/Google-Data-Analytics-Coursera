@@ -50,7 +50,7 @@ I had a look at the heartrate_seconds.csv file and although monitoring heart rat
 <p>After performing basic cleaning and checking of data in Excel, I will now move to R.</p>
 <h4>The whole code written in R can be found in a file called "RMARKDOWN" </h4>
 <ul>
-  <li>Importing the files I will be focussing on and renaming for simplification:</li>
+  <li>Importing the files I will be focusing on and renaming for simplification:</li>
 <br>
 > setwd("/Users/agnie/Documents/project") <br>
 > daily_activity <- read_csv("dailyActivity.csv") <br>
